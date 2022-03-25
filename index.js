@@ -3,6 +3,10 @@ const bodyParser = require("body-parser");
 const ShwarmaOrder = require("./assignment1Shwarma");
 
 // Create a new express application instance
+
+//Will be adding new code to deploy the application in cloud
+//New code should be mentioned below
+
 const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -33,8 +37,7 @@ app.post("/sms", (req, res) =>{
     res.end(sResponse + "</Response>");
 });
 
-//Will be adding new code to deploy the application in cloud
-//New code should be mentioned below
+
 
 var port = process.env.PORT || parseInt(process.argv.pop()) || 3002;
 
