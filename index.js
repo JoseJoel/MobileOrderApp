@@ -4,9 +4,7 @@ const ShwarmaOrder = require("./assignment1Shwarma");
 
 // Create a new express application instance
 
-//Will be adding new code to deploy the application in cloud
-//New code should be mentioned below
-
+//Food ordering app code
 const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
