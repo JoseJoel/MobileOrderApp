@@ -33,6 +33,8 @@ app.post("/sms", (req, res) =>{
     res.end(sResponse + "</Response>");
 });
 
+//Will be adding new code to deploy the application in cloud
+
 var port = process.env.PORT || parseInt(process.argv.pop()) || 3002;
 
 app.listen(port, () => console.log('Example app listening on port ' + port + '!'));
