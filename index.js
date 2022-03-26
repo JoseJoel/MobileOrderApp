@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const ShwarmaOrder = require("./assignment1Shwarma");
 
 // Create a new express application instance
+
+//Food ordering app code
 const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
