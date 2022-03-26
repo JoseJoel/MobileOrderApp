@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const ShwarmaOrder = require("./assignment1Shwarma");
 
 // Create a new express application instance
+
+//Food ordering app code
 const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -33,8 +35,8 @@ app.post("/sms", (req, res) =>{
     res.end(sResponse + "</Response>");
 });
 
-console.log("Code execution reached here");
-
 var port = process.env.PORT || parseInt(process.argv.pop()) || 3002;
 
 app.listen(port, () => console.log('Example app listening on port ' + port + '!'));
+
+console.log("Code execution reached here");
